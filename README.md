@@ -5,7 +5,7 @@
 ## To use:
 
 ```cpp
-    sqlite3_orm::Database database("C:/contacts.sqlite3");
+    sqlite3_orm::Database database("contacts.sqlite3");
 	database.Open();
 
 	sqlite3_orm::TableResult tableResult = database.SelectTableAll("CONTACTS");
