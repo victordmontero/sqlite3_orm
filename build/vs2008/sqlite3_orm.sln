@@ -1,0 +1,32 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 10.00
+# Visual Studio 2008
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "demo", "demo.vcproj", "{8AA1957C-76D8-960D-1FC5-7C100BDB120F}"
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "sqlite3_orm", "sqlite3_orm.vcproj", "{57B00679-C365-7F6E-4C5A-7945B80E7672}"
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "tests", "tests.vcproj", "{78756B10-E489-93C1-AD0B-372119DF8FF2}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Win32 = Debug|Win32
+		Release|Win32 = Release|Win32
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{8AA1957C-76D8-960D-1FC5-7C100BDB120F}.Debug|Win32.ActiveCfg = Debug|Win32
+		{8AA1957C-76D8-960D-1FC5-7C100BDB120F}.Debug|Win32.Build.0 = Debug|Win32
+		{8AA1957C-76D8-960D-1FC5-7C100BDB120F}.Release|Win32.ActiveCfg = Release|Win32
+		{8AA1957C-76D8-960D-1FC5-7C100BDB120F}.Release|Win32.Build.0 = Release|Win32
+		{57B00679-C365-7F6E-4C5A-7945B80E7672}.Debug|Win32.ActiveCfg = Debug|Win32
+		{57B00679-C365-7F6E-4C5A-7945B80E7672}.Debug|Win32.Build.0 = Debug|Win32
+		{57B00679-C365-7F6E-4C5A-7945B80E7672}.Release|Win32.ActiveCfg = Release|Win32
+		{57B00679-C365-7F6E-4C5A-7945B80E7672}.Release|Win32.Build.0 = Release|Win32
+		{78756B10-E489-93C1-AD0B-372119DF8FF2}.Debug|Win32.ActiveCfg = Debug|Win32
+		{78756B10-E489-93C1-AD0B-372119DF8FF2}.Debug|Win32.Build.0 = Debug|Win32
+		{78756B10-E489-93C1-AD0B-372119DF8FF2}.Release|Win32.ActiveCfg = Release|Win32
+		{78756B10-E489-93C1-AD0B-372119DF8FF2}.Release|Win32.Build.0 = Release|Win32
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

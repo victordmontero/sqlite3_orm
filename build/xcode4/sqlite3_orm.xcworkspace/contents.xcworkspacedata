@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Workspace
+	version = "1.0">
+	<FileRef
+		location = "group:demo.xcodeproj">
+	</FileRef>
+	<FileRef
+		location = "group:sqlite3_orm.xcodeproj">
+	</FileRef>
+	<FileRef
+		location = "group:tests.xcodeproj">
+	</FileRef>
+</Workspace>

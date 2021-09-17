@@ -1,0 +1,267 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		B68AC1CC0D182C3EE591400C /* main.cpp in Sources */ = {isa = PBXBuildFile; fileRef = E21F5234E590246666FCC874 /* main.cpp */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		84321E34DF7371A6B2CDBC74 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = FC6B44240E9520D642860A64 /* sqlite3_orm.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = B641B140DC67E0F2436ED780;
+			remoteInfo = sqlite3_orm.lib;
+		};
+		D66C90CD31ADE43F05082F0D /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = FC6B44240E9520D642860A64 /* sqlite3_orm.xcodeproj */;
+			proxyType = 1;
+			remoteGlobalIDString = 5CF86126565E629849F9BF66;
+			remoteInfo = sqlite3_orm.lib;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		6B9F8BBE9A45DFB0F38739FE /* demo.exe */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; name = demo.exe; path = demo.exe; sourceTree = BUILT_PRODUCTS_DIR; };
+		E21F5234E590246666FCC874 /* main.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; name = main.cpp; path = ../../demo/main.cpp; sourceTree = "<group>"; };
+		FC6B44240E9520D642860A64 /* sqlite3_orm.lib */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = "sqlite3_orm.xcodeproj"; path = sqlite3_orm.xcodeproj; sourceTree = SOURCE_ROOT; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		B015522E029B7D20D4DFE06E /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		01A63BE572ECEA1700DF3225 /* demo */ = {
+			isa = PBXGroup;
+			children = (
+				E21F5234E590246666FCC874 /* main.cpp */,
+				A6C936B49B3FADE6EA134CF4 /* Products */,
+				9D968EAA920D05DCE0E0A4EA /* Projects */,
+			);
+			name = demo;
+			sourceTree = "<group>";
+		};
+		4F1CB4F470E86226AD9D8B34 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				7CCD81909799F0429B6A87D0 /* sqlite3_orm.lib */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		9D968EAA920D05DCE0E0A4EA /* Projects */ = {
+			isa = PBXGroup;
+			children = (
+				FC6B44240E9520D642860A64 /* sqlite3_orm.xcodeproj */,
+			);
+			name = Projects;
+			sourceTree = "<group>";
+		};
+		A6C936B49B3FADE6EA134CF4 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				6B9F8BBE9A45DFB0F38739FE /* demo.exe */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		1CA5E3E4C0F88196D330CA24 /* demo */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 9E509A8DF0D6C57FC31B28CD /* Build configuration list for PBXNativeTarget "demo" */;
+			buildPhases = (
+				1FFCD2CE7282FDC044C7610E /* Resources */,
+				89A9EC25DC301717AE747A65 /* Sources */,
+				B015522E029B7D20D4DFE06E /* Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				3CD4F1FD5EA09F2F9B55C83D /* PBXTargetDependency */,
+			);
+			name = demo;
+			productInstallPath = "$(HOME)/bin";
+			productName = demo;
+			productReference = 6B9F8BBE9A45DFB0F38739FE /* demo.exe */;
+			productType = "com.apple.product-type.tool";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		08FB7793FE84155DC02AAC07 /* Project object */ = {
+			isa = PBXProject;
+			buildConfigurationList = 1DEB928908733DD80010E9CD /* Build configuration list for PBXProject "demo" */;
+			compatibilityVersion = "Xcode 3.2";
+			hasScannedForEncodings = 1;
+			mainGroup = 01A63BE572ECEA1700DF3225 /* demo */;
+			projectDirPath = "";
+			projectReferences = (
+				{
+					ProductGroup = 4F1CB4F470E86226AD9D8B34 /* Products */;
+					ProjectRef = FC6B44240E9520D642860A64 /* sqlite3_orm.xcodeproj */;
+				},
+			);
+			projectRoot = "";
+			targets = (
+				1CA5E3E4C0F88196D330CA24 /* demo.exe */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXReferenceProxy section */
+		7CCD81909799F0429B6A87D0 /* sqlite3_orm.lib */ = {
+			isa = PBXReferenceProxy;
+			fileType = archive.ar;
+			path = sqlite3_orm.lib;
+			remoteRef = 84321E34DF7371A6B2CDBC74 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+/* End PBXReferenceProxy section */
+
+/* Begin PBXResourcesBuildPhase section */
+		1FFCD2CE7282FDC044C7610E /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		89A9EC25DC301717AE747A65 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B68AC1CC0D182C3EE591400C /* main.cpp in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		3CD4F1FD5EA09F2F9B55C83D /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = sqlite3_orm.lib;
+			targetProxy = D66C90CD31ADE43F05082F0D /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		0069DE143924A486C8BBDC54 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(NATIVE_ARCH_ACTUAL)";
+				CONFIGURATION_BUILD_DIR = "$(SYMROOT)";
+				CONFIGURATION_TEMP_DIR = "$(OBJROOT)";
+				COPY_PHASE_STRIP = NO;
+				GCC_ENABLE_FIX_AND_CONTINUE = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					SQLITE3_ORM_WIN32,
+					DEBUG,
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				OBJROOT = obj/Debug/demo;
+				ONLY_ACTIVE_ARCH = YES;
+				SYMROOT = ../../bin/Debug/demo;
+				USER_HEADER_SEARCH_PATHS = (
+					../../include,
+					../../thirdparty,
+				);
+			};
+			name = Debug;
+		};
+		B6C18D4E0947B840DB8C1B8E /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(NATIVE_ARCH_ACTUAL)";
+				CONFIGURATION_BUILD_DIR = "$(SYMROOT)";
+				CONFIGURATION_TEMP_DIR = "$(OBJROOT)";
+				GCC_OPTIMIZATION_LEVEL = 3;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					SQLITE3_ORM_WIN32,
+					NDEBUG,
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				OBJROOT = obj/Release/demo;
+				ONLY_ACTIVE_ARCH = NO;
+				SYMROOT = ../../bin/Release/demo;
+				USER_HEADER_SEARCH_PATHS = (
+					../../include,
+					../../thirdparty,
+				);
+			};
+			name = Release;
+		};
+		C123EAD3AC1010C5F3F5D913 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CONFIGURATION_BUILD_DIR = ../../bin/Debug/demo;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				GCC_DYNAMIC_NO_PIC = NO;
+				INSTALL_PATH = /usr/local/bin;
+				PRODUCT_NAME = demo.exe;
+			};
+			name = Debug;
+		};
+		E08D068D371A70FF0F9384CD /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CONFIGURATION_BUILD_DIR = ../../bin/Release/demo;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				GCC_DYNAMIC_NO_PIC = NO;
+				INSTALL_PATH = /usr/local/bin;
+				PRODUCT_NAME = demo.exe;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		1DEB928908733DD80010E9CD /* Build configuration list for PBXProject "demo" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				0069DE143924A486C8BBDC54 /* Debug */,
+				B6C18D4E0947B840DB8C1B8E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+		9E509A8DF0D6C57FC31B28CD /* Build configuration list for PBXNativeTarget "demo.exe" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C123EAD3AC1010C5F3F5D913 /* Debug */,
+				E08D068D371A70FF0F9384CD /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+/* End XCConfigurationList section */
+};
+rootObject = 08FB7793FE84155DC02AAC07 /* Project object */;
+}

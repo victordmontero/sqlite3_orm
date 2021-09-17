@@ -1,0 +1,283 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		00E6DFE83078AEDA0B85EE28 /* tests.cpp in Sources */ = {isa = PBXBuildFile; fileRef = F73AC9909A28F042294ECFD0 /* tests.cpp */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		84321E34DF7371A6B2CDBC74 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = FC6B44240E9520D642860A64 /* sqlite3_orm.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = B641B140DC67E0F2436ED780;
+			remoteInfo = sqlite3_orm.lib;
+		};
+		D66C90CD31ADE43F05082F0D /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = FC6B44240E9520D642860A64 /* sqlite3_orm.xcodeproj */;
+			proxyType = 1;
+			remoteGlobalIDString = 5CF86126565E629849F9BF66;
+			remoteInfo = sqlite3_orm.lib;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		5CDDB74C604E897EE1BB2D8C /* tests.exe */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; name = tests.exe; path = tests.exe; sourceTree = BUILT_PRODUCTS_DIR; };
+		F73AC9909A28F042294ECFD0 /* tests.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; name = tests.cpp; path = ../../tests/tests.cpp; sourceTree = "<group>"; };
+		FC6B44240E9520D642860A64 /* sqlite3_orm.lib */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = "sqlite3_orm.xcodeproj"; path = sqlite3_orm.xcodeproj; sourceTree = SOURCE_ROOT; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		2C1FE6BCCF6B6FEEEA3C3CFC /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		4F1CB4F470E86226AD9D8B34 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				7CCD81909799F0429B6A87D0 /* sqlite3_orm.lib */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		5CE4FD33F70171A5433CBB73 /* tests */ = {
+			isa = PBXGroup;
+			children = (
+				F73AC9909A28F042294ECFD0 /* tests.cpp */,
+				A6C936B49B3FADE6EA134CF4 /* Products */,
+				9D968EAA920D05DCE0E0A4EA /* Projects */,
+			);
+			name = tests;
+			sourceTree = "<group>";
+		};
+		9D968EAA920D05DCE0E0A4EA /* Projects */ = {
+			isa = PBXGroup;
+			children = (
+				FC6B44240E9520D642860A64 /* sqlite3_orm.xcodeproj */,
+			);
+			name = Projects;
+			sourceTree = "<group>";
+		};
+		A6C936B49B3FADE6EA134CF4 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				5CDDB74C604E897EE1BB2D8C /* tests.exe */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		E5E5D5B2148C29A46DCD83F2 /* tests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 1A5B2F1BBDA6B84DD877855B /* Build configuration list for PBXNativeTarget "tests" */;
+			buildPhases = (
+				9C07675C3F52F08E5A23BD9C /* Resources */,
+				05B480B3A90009E5C3D0D6F3 /* Sources */,
+				2C1FE6BCCF6B6FEEEA3C3CFC /* Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				3CD4F1FD5EA09F2F9B55C83D /* PBXTargetDependency */,
+			);
+			name = tests;
+			productInstallPath = "$(HOME)/bin";
+			productName = tests;
+			productReference = 5CDDB74C604E897EE1BB2D8C /* tests.exe */;
+			productType = "com.apple.product-type.tool";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		08FB7793FE84155DC02AAC07 /* Project object */ = {
+			isa = PBXProject;
+			buildConfigurationList = 1DEB928908733DD80010E9CD /* Build configuration list for PBXProject "tests" */;
+			compatibilityVersion = "Xcode 3.2";
+			hasScannedForEncodings = 1;
+			mainGroup = 5CE4FD33F70171A5433CBB73 /* tests */;
+			projectDirPath = "";
+			projectReferences = (
+				{
+					ProductGroup = 4F1CB4F470E86226AD9D8B34 /* Products */;
+					ProjectRef = FC6B44240E9520D642860A64 /* sqlite3_orm.xcodeproj */;
+				},
+			);
+			projectRoot = "";
+			targets = (
+				E5E5D5B2148C29A46DCD83F2 /* tests.exe */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXReferenceProxy section */
+		7CCD81909799F0429B6A87D0 /* sqlite3_orm.lib */ = {
+			isa = PBXReferenceProxy;
+			fileType = archive.ar;
+			path = sqlite3_orm.lib;
+			remoteRef = 84321E34DF7371A6B2CDBC74 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+/* End PBXReferenceProxy section */
+
+/* Begin PBXResourcesBuildPhase section */
+		9C07675C3F52F08E5A23BD9C /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		05B480B3A90009E5C3D0D6F3 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				00E6DFE83078AEDA0B85EE28 /* tests.cpp in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		3CD4F1FD5EA09F2F9B55C83D /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = sqlite3_orm.lib;
+			targetProxy = D66C90CD31ADE43F05082F0D /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		1409F722641D8BD4E69BBD62 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(NATIVE_ARCH_ACTUAL)";
+				CONFIGURATION_BUILD_DIR = "$(SYMROOT)";
+				CONFIGURATION_TEMP_DIR = "$(OBJROOT)";
+				COPY_PHASE_STRIP = NO;
+				GCC_ENABLE_FIX_AND_CONTINUE = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					SQLITE3_ORM_WIN32,
+					DEBUG,
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				LIBRARY_SEARCH_PATHS = (
+					../../../check/out/build/src/Debug,
+				);
+				OBJROOT = obj/Debug/tests;
+				ONLY_ACTIVE_ARCH = YES;
+				OTHER_LDFLAGS = (
+					"-lcheck",
+				);
+				SYMROOT = ../../bin/Debug/tests;
+				USER_HEADER_SEARCH_PATHS = (
+					../../include,
+					../../thirdparty,
+					../../../check/out/build,
+					../../../check/out/build/src,
+				);
+			};
+			name = Debug;
+		};
+		32CC21DCD617AB0EF0E8781C /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(NATIVE_ARCH_ACTUAL)";
+				CONFIGURATION_BUILD_DIR = "$(SYMROOT)";
+				CONFIGURATION_TEMP_DIR = "$(OBJROOT)";
+				GCC_OPTIMIZATION_LEVEL = 3;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					SQLITE3_ORM_WIN32,
+					NDEBUG,
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				LIBRARY_SEARCH_PATHS = (
+					../../../check/out/build/src/Release,
+				);
+				OBJROOT = obj/Release/tests;
+				ONLY_ACTIVE_ARCH = NO;
+				OTHER_LDFLAGS = (
+					"-lcheck",
+				);
+				SYMROOT = ../../bin/Release/tests;
+				USER_HEADER_SEARCH_PATHS = (
+					../../include,
+					../../thirdparty,
+					../../../check/out/build,
+					../../../check/out/build/src,
+				);
+			};
+			name = Release;
+		};
+		83297B9BAB64344D92FFC1DB /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CONFIGURATION_BUILD_DIR = ../../bin/Release/tests;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				GCC_DYNAMIC_NO_PIC = NO;
+				INSTALL_PATH = /usr/local/bin;
+				PRODUCT_NAME = tests.exe;
+			};
+			name = Release;
+		};
+		9463C461DCD4A89321737AA1 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CONFIGURATION_BUILD_DIR = ../../bin/Debug/tests;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				GCC_DYNAMIC_NO_PIC = NO;
+				INSTALL_PATH = /usr/local/bin;
+				PRODUCT_NAME = tests.exe;
+			};
+			name = Debug;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		1A5B2F1BBDA6B84DD877855B /* Build configuration list for PBXNativeTarget "tests.exe" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				9463C461DCD4A89321737AA1 /* Debug */,
+				83297B9BAB64344D92FFC1DB /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+		1DEB928908733DD80010E9CD /* Build configuration list for PBXProject "tests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1409F722641D8BD4E69BBD62 /* Debug */,
+				32CC21DCD617AB0EF0E8781C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+/* End XCConfigurationList section */
+};
+rootObject = 08FB7793FE84155DC02AAC07 /* Project object */;
+}
