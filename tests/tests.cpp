@@ -17,7 +17,6 @@ class utSqlite3Orm : public testing::Test
     utSqlite3Orm() : testing::Test(), database(NULL)
     {
     }
-
     void SetUp() override
     {
         testing::Test::SetUp();
