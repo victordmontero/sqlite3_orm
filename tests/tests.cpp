@@ -11,10 +11,10 @@ void debug(const char* msg)
 	std::cout << msg << "\n";
 }
 
-class utSqlite3_Orm : public testing::Test
+class utSqlite3Orm : public testing::Test
 {
 public:
-	utSqlite3_Orm() : testing::Test(), database(NULL){}
+	utSqlite3Orm() : testing::Test(), database(NULL){}
 
 	void SetUp() override
 	{
@@ -51,14 +51,14 @@ TEST(sqlite3_orm_uttests, open_database_test)
 	EXPECT_EQ(rc, 0);
 }
 
-TEST_F(utSqlite3_Orm, execute_sql_test)
+TEST_F(utSqlite3Orm, execute_sql_test)
 {
 	int rc = database->ExecuteSQL("PRAGMA encoding");
 	EXPECT_EQ(rc, SQLITE3_ORM_OK);
 }
 
 
-TEST_F(utSqlite3_Orm, insert_test)
+TEST_F(utSqlite3Orm, insert_test)
 {
 	int rc = database->ExecuteSQL("CREATE TABLE TEST_TABLE(id INTEGER, NM CHAR(2))");
 
@@ -72,7 +72,7 @@ TEST_F(utSqlite3_Orm, insert_test)
 	EXPECT_EQ(rc, 1);
 }
 
-TEST_F(utSqlite3_Orm, sqlite3_orm_uttests, update_test)
+TEST_F(utSqlite3Orm, update_test)
 {
 	int rc = database->ExecuteSQL("CREATE TABLE TEST_TABLE2(id INTEGER, NM CHAR(2))");
 
@@ -89,7 +89,7 @@ TEST_F(utSqlite3_Orm, sqlite3_orm_uttests, update_test)
 	EXPECT_EQ(rc, 1);
 }
 
-TEST_F(utSqlite3_Orm, delete_test)
+TEST_F(utSqlite3Orm, delete_test)
 {
 	int rc = database->ExecuteSQL("CREATE TABLE TEST_TABLE3(id INTEGER, NM CHAR(2))");
 
@@ -105,13 +105,13 @@ TEST_F(utSqlite3_Orm, delete_test)
 }
 
 
-TEST_F(utSqlite3_Orm, string_sql_test)
+TEST_F(utSqlite3Orm, string_sql_test)
 {
 	sqlite3_orm::string test_string = "TEST_VALUE";
 	EXPECT_STREQ(test_string.ToSqlString().c_str(), "'TEST_VALUE'");
 }
 
-TEST_F(utSqlite3_Orm, commit_tran_test)
+TEST_F(utSqlite3Orm, commit_tran_test)
 {
 	int rc = database->ExecuteSQL("CREATE TABLE TEST_TABLE4(id INTEGER, NM CHAR(2))");
 
@@ -130,7 +130,7 @@ TEST_F(utSqlite3_Orm, commit_tran_test)
 	EXPECT_EQ(rc, 0);
 }
 
-TEST_F(utSqlite3_Orm, rollback_tran_test)
+TEST_F(utSqlite3Orm, rollback_tran_test)
 {
 	int rc = database->ExecuteSQL("CREATE TABLE TEST_TABLE5(id INTEGER, NM CHAR(2))");
 
