@@ -1,11 +1,12 @@
 #ifndef DATABASE_HPP_
 #define DATABASE_HPP_
-
-//#include <varargs.h>
 #include <string>
 #include <tableresult.hpp>
-#include <sqlite3.h>
 #include <log.hpp>
+
+//Forward declaring to avoid clients having to include sqlite3.h themselves
+struct sqlite3;
+struct sqlite3_stmt;
 
 namespace sqlite3_orm
 {

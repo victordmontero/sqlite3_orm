@@ -11,7 +11,7 @@ namespace sqlite3_orm
 	{
 		std::string constraintName;
 	public:
-		ColumnConstraint(std::string constraintName = "");
+		explicit ColumnConstraint(std::string constraintName = "");
 		virtual const std::string getConstraintName() const;
 		virtual std::string parse();
 	};
@@ -38,7 +38,7 @@ namespace sqlite3_orm
 	class UniqueConstraint : public ColumnConstraint
 	{
 	public:
-		UniqueConstraint(std::string constraintName = "")
+		explicit UniqueConstraint(std::string constraintName = "")
 			: ColumnConstraint(constraintName) {}
 
 		virtual std::string parse();
@@ -62,7 +62,7 @@ namespace sqlite3_orm
 	{
 		std::string expression;
 	public:
-		CheckConstraint(std::string expression, std::string constraintName = "")
+		explicit CheckConstraint(std::string expression, std::string constraintName = "")
 			: ColumnConstraint(constraintName), expression(expression) {}
 		virtual const std::string getExpression() const;
 		virtual std::string parse();
@@ -75,7 +75,7 @@ namespace sqlite3_orm
 		bool isLiteralValue;
 		bool isSignedValue;
 	public:
-		DefaultConstraint(std::string expression,
+		explicit DefaultConstraint(std::string expression,
 			std::string constraintName = "",
 			bool isLiteralValue = false,
 			bool isSignedValue = false,
