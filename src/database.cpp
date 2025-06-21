@@ -145,7 +145,7 @@ namespace sqlite3_orm
 		return rowChanged > 0 ? rc : rowChanged;
 	}
 
-	TableResult Database::SelectTableAll(char* tableName)
+	TableResult Database::SelectTableAll(const char* tableName)
 	{
 		TableResult tableResult(tableName);
 		std::vector<std::string> rowFields;
@@ -153,7 +153,6 @@ namespace sqlite3_orm
 		std::string columnName;
 		std::string result;
 		sqlite3_stmt* statement;
-		char** pargs = &tableName;
 		char* nextArg = NULL;
 		int rc;
 
@@ -185,7 +184,7 @@ namespace sqlite3_orm
 			rowFields.clear();
 			for (size_t i = 0; i < sqlite3_column_count(statement); i++)
 			{
-				Log::debug((const char*)sqlite3_column_text(statement, i));
+				Log::debug("row[%d] %s", i, (const char*)sqlite3_column_text(statement, i));
 				rowFields.push_back((char*)sqlite3_column_text(statement, i));
 			}
 			tableResult.addRow(rowHeaders, rowFields);
@@ -262,14 +261,13 @@ namespace sqlite3_orm
 		return tableResult;
 	}
 
-	long Database::InsertIntoTable(char* tableName, std::map<std::string, std::string> columnValues)
+	long Database::InsertIntoTable(const char* tableName, std::map<std::string, std::string> columnValues)
 	{
 		std::vector<std::string> rowFields;
 		std::vector<std::string> rowHeaders;
 		std::string columnName;
 		std::string result;
 		//sqlite3_stmt* statement;
-		char** pargs = &tableName;
 		char* nextArg = NULL;
 		char* errMsg = NULL;
 		long rowChanged = -1;
@@ -330,14 +328,13 @@ namespace sqlite3_orm
 		return rowChanged > 0 ? rowChanged : rc;
 	}
 
-	long Database::UpdateTable(char* tableName, char* whereExpr, std::map<std::string, std::string> columnValues)
+	long Database::UpdateTable(const char* tableName, char* whereExpr, std::map<std::string, std::string> columnValues)
 	{
 		std::vector<std::string> rowFields;
 		std::vector<std::string> rowHeaders;
 		std::string columnName;
 		std::string result;
 		//sqlite3_stmt* statement;
-		char** pargs = &tableName;
 		char* nextArg = NULL;
 		char* errMsg = NULL;
 		long rowChanged = -1;
@@ -385,7 +382,7 @@ namespace sqlite3_orm
 		return rowChanged > 0 ? rowChanged : rc;
 	}
 
-	long Database::DeleteRow(char* tableName, std::string whereExpr)
+	long Database::DeleteRow(const char* tableName, std::string whereExpr)
 	{
 		std::string result;
 		char* errMsg = NULL;

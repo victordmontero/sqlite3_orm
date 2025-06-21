@@ -18,9 +18,9 @@ namespace sqlite3_orm
 		static void setLogDebugCallback(DEBUG_CALLBACK);
 		static void setLogInfoCallback(DEBUG_CALLBACK);
 		static void setLogErrorCallback(DEBUG_CALLBACK);
-		static void debug(const char* msg);
-		static void info(const char* msg);
-		static void error(const char* msg);
+		static void debug(const char* msg, ...);
+		static void info(const char* msg, ...);
+		static void error(const char* msg, ...);
 	};
 }
 

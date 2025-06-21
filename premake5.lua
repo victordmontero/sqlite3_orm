@@ -1,24 +1,24 @@
--- require("cmake")
+require("export-compile-commands")
 
 workspace("sqlite3_orm")
-    configurations({"Debug","Release"})
+  configurations({"Debug","Release"})
 	platforms {"Win32","Win64","Linux"}
-    location("build/%{_ACTION}")
+  location("build/%{_ACTION}")
 
-    project("sqlite3_orm")
-        kind("StaticLib")
-        language("C++")
-        targetdir("bin/%{cfg.buildcfg}/lib")
-		cppdialect("C++98")
+  project("sqlite3_orm")
+    kind("StaticLib")
+    language("C++")
+    targetdir("bin/%{cfg.buildcfg}/lib")
+	  cppdialect("C++98")
 
-        files({
-			"include/**.h*",
-			"src/**.h*",
-			"src/**.c*",
-			"thirdparty/sqlite/**.h*",
-			"thirdparty/sqlite/**.c*",
-			"**.lua"
-		})
+    files({
+	  	"include/**.h*",
+	  	"src/**.h*",
+	  	"src/**.c*",
+	  	"thirdparty/sqlite/**.h*",
+	  	"thirdparty/sqlite/**.c*",
+	  	"**.lua"
+	  })
 
 		defines{
 			"SQLITE3_ORM_WIN32"
@@ -28,7 +28,7 @@ workspace("sqlite3_orm")
 			"SQLITE3_ORM_EVO"
 		}
 
-        includedirs{
+    includedirs{
 			"include",
 			"thirdparty/sqlite"
 		}
@@ -37,15 +37,15 @@ workspace("sqlite3_orm")
 			"thirdparty"
 		}
 
-        filter("configurations:Debug")
-            defines({
-				"DEBUG"
-			})
-            symbols("On")
+    filter("configurations:Debug")
+    defines({
+			"DEBUG"
+		})
+    symbols("On")
 
-        filter("configurations:Release")
-            defines({"NDEBUG"})
-            optimize("On")
+    filter("configurations:Release")
+        defines({"NDEBUG"})
+        optimize("On")
 
 -- Tests
 	project "tests"

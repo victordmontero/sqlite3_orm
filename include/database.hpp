@@ -32,11 +32,11 @@ namespace sqlite3_orm
 		int BeginTran(TransactionType tranType = DEFERRED);
 		int RollBack();
 		int Commit();
-		TableResult SelectTableAll(char* tableName);
+		TableResult SelectTableAll(const char* tableName);
 		TableResult SelectTable(char* tableName, ...);
-		long InsertIntoTable(char* tableName, std::map<std::string, std::string> columnValues);
-		long UpdateTable(char* tableName, char* whereExpr, std::map<std::string, std::string> columnValues);
-		long DeleteRow(char* tableName, std::string whereExpr = "");
+		long InsertIntoTable(const char* tableName, std::map<std::string, std::string> columnValues);
+		long UpdateTable(const char* tableName, char* whereExpr, std::map<std::string, std::string> columnValues);
+		long DeleteRow(const char* tableName, std::string whereExpr = "");
 
 		int ExecuteSQL(const char*);
 	};
