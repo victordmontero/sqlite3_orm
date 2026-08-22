@@ -13,8 +13,8 @@ project(sqlite3_orm)
 #   - filter defines: DEBUG/NDEBUG, SQLITE3_ORM_WIN32 on Win32/Win64, LINUX on Linux
 #   - pic("On") -> set POSITION_INDEPENDENT_CODE ON
 
-option(SQLITE3_ORM_TESTS "Compiles and runs tests" ON)
-option(SQLITE3_ORM_DEMO "Compiles demo" ON)
+option(SQLITE3_ORM_TESTS "Compiles and runs tests" OFF)
+option(SQLITE3_ORM_DEMO "Compiles demo" OFF)
 
 file(GLOB_RECURSE SQLITE3_ORM_HEADERS
   "${CMAKE_CURRENT_SOURCE_DIR}/include/*.hpp"
