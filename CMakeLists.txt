@@ -1,4 +1,4 @@
-cmake_minimum_required(VERSION 4.4)
+cmake_minimum_required(VERSION 4.2.3)
 
 project(sqlite3_orm)
 
