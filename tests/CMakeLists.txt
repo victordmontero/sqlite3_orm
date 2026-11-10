@@ -45,6 +45,34 @@ target_link_libraries(${PROJECT_NAME} PRIVATE
     GTest::GTest
 )
 
+#Sql String test######################
+add_executable(sqlite3_orm_sql_string_tests
+   "../include/string.hpp"
+   "../src/string.cpp"
+   utSqlString.cpp
+)
+
+target_link_libraries(sqlite3_orm_sql_string_tests PRIVATE
+    GTest::GTest
+)
+target_compile_options(sqlite3_orm_sql_string_tests PRIVATE -fsanitize=address,leak)
+target_link_options(sqlite3_orm_sql_string_tests PRIVATE -fsanitize=address,leak)
+
+
+add_test(NAME sqlite3_orm_sql_string_tests
+         COMMAND ${CMAKE_COMMAND} -E env
+                 LSAN_OPTIONS=verbosity=1:log_threads=1
+                 $<TARGET_FILE:sqlite3_orm_sql_string_tests>)
+
+# add_test(NAME sqlite3_orm_sql_string_tests
+#          COMMAND sqlite3_orm_sql_string_tests)
+
+set_tests_properties(sqlite3_orm_sql_string_tests PROPERTIES
+  ENVIRONMENT "LSAN_OPTIONS=verbosity=1:log_threads=1"
+)
+
+#####################################
+
 include(GoogleTest)
 gtest_discover_tests(${PROJECT_NAME})
 
