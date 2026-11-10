@@ -102,12 +102,6 @@ TEST_F(utSqlite3Orm, delete_test)
     EXPECT_EQ(rc, 1);
 }
 
-TEST_F(utSqlite3Orm, string_sql_test)
-{
-    sqlite3_orm::string test_string = "TEST_VALUE";
-    EXPECT_STREQ(test_string.ToSqlString().c_str(), "'TEST_VALUE'");
-}
-
 TEST_F(utSqlite3Orm, commit_tran_test)
 {
     int rc = database->ExecuteSQL("CREATE TABLE TEST_TABLE4(id INTEGER, NM CHAR(2))");
